@@ -100,7 +100,6 @@
 //     data.forEach(str => {
 //         console.log(str);
 //     }) 
-    
 //     // data?.forEach(str => {
 //     //     console.log(str);
 //     // })
@@ -109,9 +108,7 @@
 //     //     console.log(err);
 //     // })
 //     console.log(errs);
-    
 // })
-
 // const preHeatOven = () => {
 //     return new Promise((resolve , reject) => {
 //         setTimeout(() => {
@@ -124,7 +121,6 @@
 //         },1000)
 //     })
 // }
-
 // const addSugerAndChocoShips = () => {
 //     return new Promise((resolve , reject) => {
 //         setTimeout(() => {
@@ -137,7 +133,6 @@
 //         },1000)
 //     })
 // }
-
 // const addFlourCocoateAndSalt = () => {
 //     return new Promise((resolve , reject) => {
 //         setTimeout(() => {
@@ -150,7 +145,6 @@
 //         },1000)
 //     })
 // }
-
 // const bakeMixture = () => {
 //     return new Promise((resolve , reject) => {
 //         setTimeout(() => {
@@ -163,7 +157,6 @@
 //         },1000)
 //     })
 // }
-
 // const bakeChocolateBrownied = async () => {
 //     const task1 = await preHeatOven();
 //     const task2 = await addSugerAndChocoShips();
@@ -174,5 +167,33 @@
 //     console.log(task3);
 //     console.log(task4);
 // }
-
 // bakeChocolateBrownied();
+// fetch('https://dummyjson.com/products/1' , {
+//     method : "PUT" ,
+//     headers : {
+//         "Content-Type" : "applicaton/json"
+//     },
+//     body : JSON.stringify({
+//         title : "Iphone 19",
+//         description : "New iphone 19", 
+//         price : "1000",
+//         rating : "9/10"
+//     })
+// })
+// .then(res => res.json())
+// .then(console.log)
+// .catch(err => {
+//     console.log(err);
+// });
+
+const getAllProducts = async () => {
+    try{
+        const response = await fetch("https://dummyjson.com/products");
+        const json = await response.json();
+        console.log(json);
+    }catch(err){
+        console.log(err);
+    }
+}   
+
+getAllProducts();
