@@ -28,7 +28,6 @@
 //         callBack();
 //     },1000)
 // }
-
 // task1(() => {
 //     task2(() => {
 //         task3(() => {
@@ -44,11 +43,9 @@
 // showMessage(() => {
 //     return "Amir Dhahri"
 // })
-
 // const showMessage = (callback) => {
 //     console.log(callback);
 // }
-
 // const firstMessage = (callback) => {
 //     setTimeout(() => {
 //         showMessage("Hello")
@@ -60,3 +57,30 @@
 //     showMessage("Hello")
 // }
 // firstMessage(secondMessage)
+// const promise = new Promise((resolve , reject) => {
+//     const allWentWill = false;
+//     if(allWentWill){
+//         resolve("Good")
+//     }else{
+//         reject("Bad")
+//     }
+// }) 
+// console.log(promise);
+// const promise = new Promise((resolve , reject) => {
+//     const randomNumber = Math.floor(Math.random() * 10);
+//     setTimeout(()=>{
+//         if(randomNumber < 5){
+//             resolve("Well done !, you guessed right")
+//         }else{
+//             reject("oops !, you guessed wrong ")
+//         }
+//     }, 100)
+// }) 
+// promise.then((data) => {
+//     console.log(data);
+// }).catch((err) => {
+//     console.log(err);
+// }).finally(() => {
+//     console.log("Done");
+// });
+
