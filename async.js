@@ -112,42 +112,67 @@
     
 // })
 
-const preHeatOven = () => {
-    return new Promise((resolve , reject) => {
-        setTimeout(() => {
-            const preHeatOven = true;
-            if(preHeatOven){
-                resolve("Preheat oven to 180deg");
-            }else{
-                reject("Failed task");
-            }
-        },1000)
-    })
-}
-const addSugerAndChocoShips = () => {
-    return new Promise((resolve , reject) => {
-        setTimeout(() => {
-            const addChoco = true;
-            if(addChoco){
-                resolve("Place butter and choclate chips, stir until melted and smooth");
-            }else{
-                reject("Failed task");
-            }
-        },1000)
-    })
-}
+// const preHeatOven = () => {
+//     return new Promise((resolve , reject) => {
+//         setTimeout(() => {
+//             const preHeatOven = true;
+//             if(preHeatOven){
+//                 resolve("Preheat oven to 180deg");
+//             }else{
+//                 reject("Failed task");
+//             }
+//         },1000)
+//     })
+// }
 
-const preHeatOven = () => {
-    return new Promise((resolve , reject) => {
-        setTimeout(() => {
-            const preHeatOven = true;
-            if(preHeatOven){
-                resolve("Preheat oven to 180deg");
-            }else{
-                reject("Failed task");
-            }
-        },1000)
-    })
-}
+// const addSugerAndChocoShips = () => {
+//     return new Promise((resolve , reject) => {
+//         setTimeout(() => {
+//             const addChoco = true;
+//             if(addChoco){
+//                 resolve("Place butter and choclate chips, stir until melted and smooth");
+//             }else{
+//                 reject("Failed task");
+//             }
+//         },1000)
+//     })
+// }
 
+// const addFlourCocoateAndSalt = () => {
+//     return new Promise((resolve , reject) => {
+//         setTimeout(() => {
+//             const addSaltFlour = true;
+//             if(addSaltFlour){
+//                 resolve("Add flour, coco and salt and stir until smooth");
+//             }else{
+//                 reject("Failed task");
+//             }
+//         },1000)
+//     })
+// }
 
+// const bakeMixture = () => {
+//     return new Promise((resolve , reject) => {
+//         setTimeout(() => {
+//             const bakeMixture = true;
+//             if(bakeMixture){
+//                 resolve("Bake mixture for really gooey mixture center");
+//             }else{
+//                 reject("Failed task");
+//             }
+//         },1000)
+//     })
+// }
+
+// const bakeChocolateBrownied = async () => {
+//     const task1 = await preHeatOven();
+//     const task2 = await addSugerAndChocoShips();
+//     const task3 = await addFlourCocoateAndSalt();
+//     const task4 = await bakeMixture();
+//     console.log(task1);
+//     console.log(task2);
+//     console.log(task3);
+//     console.log(task4);
+// }
+
+// bakeChocolateBrownied();
