@@ -6,7 +6,7 @@
 // }
 // function task2(callBack){
 //     setTimeout(() => {
-//         console.log(2);
+//         console.log(2); 
 //         callBack();
 //     },1000)
 // }
