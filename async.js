@@ -39,7 +39,6 @@
 //         })
 //     })
 // })
-
 // showMessage(() => {
 //     return "Amir Dhahri"
 // })
@@ -52,7 +51,6 @@
 //         callback();
 //     },2000)
 // }
-
 // const secondMessage = () => {
 //     showMessage("Hello")
 // }
@@ -83,4 +81,33 @@
 // }).finally(() => {
 //     console.log("Done");
 // });
-
+// const promiseOne = new Promise((resolve , reject) => {
+//     setTimeout(()=>{
+//         resolve("Well done !, you guessed right")
+//     }, 100)
+// }) 
+// const promiseTwo = new Promise((resolve , reject) => {
+//     setTimeout(()=>{
+//         resolve("Well done !, you guessed right")
+//     }, 100)
+// }) 
+// const promiseThree = new Promise((resolve , reject) => {
+//     setTimeout(()=>{
+//         reject("Well done !, you guessed right")
+//     }, 100)
+// }) 
+// Promise.all([promiseOne , promiseTwo , promiseThree]).then(data => {
+//     data.forEach(str => {
+//         console.log(str);
+//     }) 
+    
+//     // data?.forEach(str => {
+//     //     console.log(str);
+//     // })
+// }).catch(errs => {
+//     // errs?.forEach(err => {
+//     //     console.log(err);
+//     // })
+//     console.log(errs);
+    
+// })
