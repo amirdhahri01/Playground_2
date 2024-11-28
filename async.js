@@ -111,3 +111,43 @@
 //     console.log(errs);
     
 // })
+
+const preHeatOven = () => {
+    return new Promise((resolve , reject) => {
+        setTimeout(() => {
+            const preHeatOven = true;
+            if(preHeatOven){
+                resolve("Preheat oven to 180deg");
+            }else{
+                reject("Failed task");
+            }
+        },1000)
+    })
+}
+const addSugerAndChocoShips = () => {
+    return new Promise((resolve , reject) => {
+        setTimeout(() => {
+            const addChoco = true;
+            if(addChoco){
+                resolve("Place butter and choclate chips, stir until melted and smooth");
+            }else{
+                reject("Failed task");
+            }
+        },1000)
+    })
+}
+
+const preHeatOven = () => {
+    return new Promise((resolve , reject) => {
+        setTimeout(() => {
+            const preHeatOven = true;
+            if(preHeatOven){
+                resolve("Preheat oven to 180deg");
+            }else{
+                reject("Failed task");
+            }
+        },1000)
+    })
+}
+
+
