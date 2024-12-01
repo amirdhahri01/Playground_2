@@ -211,46 +211,46 @@
 // }
 // loadJokeBtn.addEventListener("click" , loadJoke)
 
-const API_KEY = "38df3a70b4841927ac9107a340ef9792"
-const date = document.querySelector(".date");
-const city = document.querySelector(".city");
-const temp = document.querySelector(".temp");
-const tempImg = document.querySelector(".temp-img");
-const description =  document.querySelector(".description");
-const tempMax =  document.querySelector(".temp-max");
-const tempMin =  document.querySelector(".temp-min");
+// const API_KEY = "38df3a70b4841927ac9107a340ef9792"
+// const date = document.querySelector(".date");
+// const city = document.querySelector(".city");
+// const temp = document.querySelector(".temp");
+// const tempImg = document.querySelector(".temp-img");
+// const description =  document.querySelector(".description");
+// const tempMax =  document.querySelector(".temp-max");
+// const tempMin =  document.querySelector(".temp-min");
 
-const months = ["January" , "February" , "March" , "April", 
-                "May" , "June" , "July" , "August" , "September",
-                "October" , "November" , "December"];
-const dateObj = new Date();
-let month = months[dateObj.getUTCMonth()];
-let day = dateObj.getUTCDay()+1;
-let year =  dateObj.getUTCFullYear();
+// const months = ["January" , "February" , "March" , "April", 
+//                 "May" , "June" , "July" , "August" , "September",
+//                 "October" , "November" , "December"];
+// const dateObj = new Date();
+// let month = months[dateObj.getUTCMonth()];
+// let day = dateObj.getUTCDay()+1;
+// let year =  dateObj.getUTCFullYear();
 
-date.innerHTML = `${month} ${day} , ${year}`
+// date.innerHTML = `${month} ${day} , ${year}`
 
-const app = document.querySelector(".app");
-const getWeather = async () => {
-    try {
-        const cityName = document.querySelector(".search-bar-input").value
-        const weatherDataFetch = await fetch(`http://api.openweathermap.org/data/2.5/forecast?q=${cityName}&id=524901&appid=${API_KEY}` , {
-            headers:{
-                Accept : "application/json"
-            }
-        });
-        const weatherData = await weatherDataFetch.json();
-        city.innerHTML = `${weatherData.city.name}`
-        description.innerHTML = `${weatherData.list[0].weather[0].description}`
-        tempImg.innerHTML = `<img src="https://openweathermap.org/img/wn/${weatherData.list[0].weather[0].icon}@2x.png"></img>`
-        temp.innerHTML = `<h2>${Math.round(weatherData.list[0].main.temp)}°C</h2>`
-        tempMax.innerHTML = `${Math.round(weatherData.list[0].main.temp_max)}°C`
-        tempMin.innerHTML = `${Math.round(weatherData.list[0].main.temp_min)}°C`
-    } catch (error) {
-        console.log(error);
-    }
-}
-const btn = document.querySelector(".search-icon");
-btn.addEventListener("click" , () => {
-    getWeather();
-})
+// const app = document.querySelector(".app");
+// const getWeather = async () => {
+//     try {
+//         const cityName = document.querySelector(".search-bar-input").value
+//         const weatherDataFetch = await fetch(`http://api.openweathermap.org/data/2.5/forecast?q=${cityName}&id=524901&appid=${API_KEY}` , {
+//             headers:{
+//                 Accept : "application/json"
+//             }
+//         });
+//         const weatherData = await weatherDataFetch.json();
+//         city.innerHTML = `${weatherData.city.name}`
+//         description.innerHTML = `${weatherData.list[0].weather[0].description}`
+//         tempImg.innerHTML = `<img src="https://openweathermap.org/img/wn/${weatherData.list[0].weather[0].icon}@2x.png"></img>`
+//         temp.innerHTML = `<h2>${Math.round(weatherData.list[0].main.temp)}°C</h2>`
+//         tempMax.innerHTML = `${Math.round(weatherData.list[0].main.temp_max)}°C`
+//         tempMin.innerHTML = `${Math.round(weatherData.list[0].main.temp_min)}°C`
+//     } catch (error) {
+//         console.log(error);
+//     }
+// }
+// const btn = document.querySelector(".search-icon");
+// btn.addEventListener("click" , () => {
+//     getWeather();
+// })
