@@ -196,3 +196,22 @@
 // }   
 // getAllProducts();
 
+
+const loadJokeBtn = document.querySelector(".load-joke-btn");
+const loadJoke = async () => {
+    try {
+        const chuckNorrisJokes = await fetch("https://api.chucknorris.io/jokes/random" , {
+            headers:{
+                Accept : "application/json"
+            }
+        });
+        const jokeData = await chuckNorrisJokes.json();
+        document.querySelector(".loading-joke").innerHTML = jokeData.value;
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+loadJokeBtn.addEventListener("click" , () => {
+    loadJoke();
+})
