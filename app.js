@@ -233,13 +233,13 @@ date.innerHTML = `${month} ${day} , ${year}`
 const app = document.querySelector(".app");
 const getWeather = async () => {
     try {
-        const weatherDataFetch = await fetch(`http://api.openweathermap.org/data/2.5/forecast?id=524901&appid=${API_KEY}` , {
+        const cityName = document.querySelector(".search-bar-input").value
+        const weatherDataFetch = await fetch(`http://api.openweathermap.org/data/2.5/forecast?q=${cityName}&id=524901&appid=${API_KEY}` , {
             headers:{
                 Accept : "application/json"
             }
         });
         const weatherData = await weatherDataFetch.json();
-        console.log(weatherData);
         city.innerHTML = `${weatherData.city.name}`
         description.innerHTML = `${weatherData.list[0].weather[0].description}`
         tempImg.innerHTML = `<img src="https://openweathermap.org/img/wn/${weatherData.list[0].weather[0].icon}@2x.png"></img>`
@@ -250,4 +250,7 @@ const getWeather = async () => {
         console.log(error);
     }
 }
-getWeather()
+const btn = document.querySelector(".search-icon");
+btn.addEventListener("click" , () => {
+    getWeather();
+})
