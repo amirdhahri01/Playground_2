@@ -145,3 +145,127 @@ img{
     font-size: 1.1rem;
     text-transform: uppercase;
 } */
+
+
+body{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 100%;
+   width: 100%;
+   background-color:#fce3a6;
+   padding-top: 20vh;
+}
+
+.pokedex-one{
+    width: 350px;
+    height: 520px;
+    display: block;
+    margin: auto;
+    background-color: #fc2243;
+    z-index: 3;
+}
+
+.top{
+    width: 75%;
+    display: block;
+    margin: auto;
+    height: 50%;
+    position: relative;
+    background: none;
+    border-radius: 0;
+    z-index: 1;
+}
+.top-square{
+    display: block;
+    width: 55%;
+    margin: auto;
+    background-color: #d50625;
+    z-index: 1;
+    height: 25%;
+    position: absolute;
+    left: -16.5%;
+}
+.button-white{
+    background-color: #fff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin: auto;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    z-index: 2;
+}
+
+.button-blue{
+    background-color: #71cdf4;
+    border: 50%;
+    width: 85%;
+    height: 85%;
+    display: block;
+    margin: auto;
+    position: absolute;
+    top: 8%;
+    left: 8%;
+    z-index: 3;
+    border-radius: 50%;
+}
+.top-square-two{
+    display: block;
+    margin: auto;
+    background-color: #d50625;
+    z-index: 3;
+    height: 60%;
+    width: 160%;
+    position: absolute;
+    left:80%;
+}
+.top-square-two > div{
+    border-radius: 50%;
+    display: block;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    margin: auto;
+    z-index: 2;
+}
+.top-square-two .button-red{
+    background-color: #fc2243;
+    top: 45%;
+    left: -18%;
+}
+.top-square-two .button-green{
+    background-color: #58bb69;
+    top: 45%;
+    left: -8%;
+}
+.top-square-two .button-yellow{
+    background-color: #ffcf54;
+    top: 45%;
+    left: 2%;
+}
+
+.screen{
+    position: absolute;
+    background-color: #e6e6e6;
+    display: block;
+    margin: auto;
+    border-radius: 5%;
+    height: 75%;
+    width: 100%;
+    bottom: -10%;
+}
+
+.screen-two{
+    position: absolute;
+    background-color: #e5f6fc;
+    display: block;
+    margin: auto;
+    border-radius: 8cqi;
+    height: 75%;
+    width: 80%;
+    bottom: 10%;
+    left: 10%;
+}
