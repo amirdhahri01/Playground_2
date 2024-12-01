@@ -254,3 +254,22 @@
 // btn.addEventListener("click" , () => {
 //     getWeather();
 // })
+
+const getPokemon = async () => {
+    try {
+        const pokemonName = document.querySelector(".search-name").value?.toLowerCase()
+        const pokemonData = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonName}`);
+        if(!pokemonData.ok){
+            throw new Error("Could not found pokemon");
+        }
+        const data = await pokemonData.json();
+        const pokemonImage = data.sprites.front_default; 
+        const displayPokemon = document.querySelector(".pokemon-img");
+        displayPokemon.src = pokemonImage;
+        displayPokemon.style.display = "block";
+    } catch (error) {
+        console.log("Could not found pokemon");
+    }
+}
+const searchBtn = document.querySelector(".search-btn");
+searchBtn.addEventListener("click" ,  getPokemon)

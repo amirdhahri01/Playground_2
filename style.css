@@ -176,7 +176,7 @@ body{
     border-radius: 0;
     z-index: 1;
 }
-.top-square{
+.pokedex-one .top-square{
     display: block;
     width: 55%;
     margin: auto;
@@ -263,9 +263,94 @@ body{
     background-color: #e5f6fc;
     display: block;
     margin: auto;
-    border-radius: 8cqi;
+    border-radius: 8%;
     height: 75%;
     width: 80%;
     bottom: 10%;
     left: 10%;
+}
+
+.bottom{
+    width: 100%;
+    display: block;
+    margin: auto;
+    height: 50%;
+    border-radius: 5% ;
+    position: relative;
+}
+
+.start{
+    cursor: pointer;
+    width: 15%;
+    display: block;
+    margin: 10px auto;
+    height: 8%;
+    position: absolute;
+    left: 48%;    
+    top: 30%;
+    background-color: #f07147;
+    border-radius: 30px;
+}
+
+.select{
+    cursor: pointer;
+    width: 15%;
+    display: block;
+    margin: 10px auto;
+    height: 8%;
+    position: absolute;
+    left: 30%;    
+    top: 30%;
+    background-color: #58bb69;
+    border-radius: 30px;
+}
+
+.button-blue-two{
+    cursor: pointer;
+    background-color: #1697d9;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin: auto;
+    position: absolute;
+    top:29%;
+    left: 5%;
+    z-index: 2;
+}
+
+.button-yellow-two{
+    cursor: pointer;
+    background-color: #ffcf54;
+    border-radius: 5%;
+    width: 120px;
+    height: 50px;
+    display: block;
+    margin: auto;
+    position: absolute;
+    top:59%;
+    left: 25%;
+    z-index: 2;
+}
+
+.dpad-horizontal{
+    cursor: pointer;
+    background-color: #404040;
+    height: 80px;
+    width: 23px;
+    position: absolute;
+    display: block;
+    top: 32%;
+    right: 16%;
+}
+
+.dpad-vertical{
+    cursor: pointer;
+    background-color: #404040;
+    height: 23px;
+    width: 80px;
+    position: absolute;
+    display: block;
+    top: 42%;
+    right: 8%;
 }
