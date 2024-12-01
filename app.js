@@ -212,6 +212,4 @@ const loadJoke = async () => {
     }
 }
 
-loadJokeBtn.addEventListener("click" , () => {
-    loadJoke();
-})
+loadJokeBtn.addEventListener("click" , loadJoke)
