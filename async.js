@@ -185,15 +185,14 @@
 // .catch(err => {
 //     console.log(err);
 // });
+// const getAllProducts = async () => {
+//     try{
+//         const response = await fetch("https://dummyjson.com/products");
+//         const json = await response.json();
+//         console.log(json);
+//     }catch(err){
+//         console.log(err);
+//     }
+// }   
+// getAllProducts();
 
-const getAllProducts = async () => {
-    try{
-        const response = await fetch("https://dummyjson.com/products");
-        const json = await response.json();
-        console.log(json);
-    }catch(err){
-        console.log(err);
-    }
-}   
-
-getAllProducts();
