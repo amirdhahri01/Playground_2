@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chuck!Norris Jokes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
+    <!-- <div class="container">
         <h2>Chuck Norris Jokes</h2>
         <div class="joke-container">
             <p class="loading-joke">
@@ -18,6 +19,37 @@
             Load Another
         </button>
         <img src="images/pngimg.com - chuck_norris_PNG8.png" alt="chuck Norris">
+    </div> -->
+    <div class="app">
+        <!-- Search Bar  -->
+        <div class="search-bar">
+            <input type="text" class="searchBarInput" placeholder="Search By City">
+            <button class="searchIcon" aria-hidden="true"><i class="fa fa-search"></i></button>
+        </div>
+        <!-- Date & City -->
+        <div class="info">
+            <p class="date"></p>
+            <h3 class="city"></h3>
+        </div>
+        <!-- Description  -->
+        <div class="description"></div>
+        <!-- Temp  -->
+        <div class="temp"></div>
+        <!-- Extra Info  -->
+        <div class="extra-info">
+            <div class="col">
+                <div class="info">
+                    <h5>Highs</h5>
+                    <p class="temp-max"></p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="info">
+                    <h5>Lows</h5>
+                    <p class="temp-min"></p>
+                </div>
+            </div>
+        </div>
     </div>
     <script src="app.js"></script>
 </body>

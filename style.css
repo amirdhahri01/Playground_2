@@ -5,7 +5,7 @@ body{
     font-family: monospace;
 }
 
-.container{
+/* .container{
     position: relative;
     background-color: #1f1f1f;
     height: 100vh;
@@ -47,4 +47,6 @@ img{
     bottom: -90px;
     left: 50%;
     transform: translateX(-50%);
-}
+} */
+
+
